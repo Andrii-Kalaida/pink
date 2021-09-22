@@ -1,0 +1,83 @@
+.products {
+  margin-top: 72px;
+
+  &__section {
+    display: flex;
+    justify-content: space-around;
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 20px;
+      // grid-template-rows: 1fr 1fr;
+    }
+
+    @include onMobile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__circle {
+    @include flex-jc-center-ai-center;
+
+    @include onMobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__circle-blue {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #4eb9f4;
+  }
+
+  &__circle-green {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #6fc125;
+  }
+
+  &__circle-red {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #ff5649;
+  }
+
+  &__circle-orange {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #e48f23;
+  }
+
+  &__name {
+    font-size: 17px;
+    margin-top: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__name-beer {
+    text-align: left;
+    margin-left: 8px;
+  }
+}

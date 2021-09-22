@@ -1,0 +1,44 @@
+.people {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+
+  @include onMobile {
+    display: block;
+    margin: 52px auto 0;
+  }
+
+  &__text {
+    margin-left: 26px;
+    @include onMobile {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 27px;
+    margin: 0;
+    color: #404040;
+
+    @include onMobile {
+      margin-top: 12px;
+    }
+  }
+
+  &__description {
+    max-width: 722px;
+    font-size: 17px;
+    margin-top: 18px;
+    color: #8b8b8b;
+  }
+
+  &__img {
+    width: 199px;
+    height: 132px;
+    @include onMobile {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

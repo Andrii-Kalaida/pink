@@ -1,0 +1,33 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  color: #fff;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 79px;
+    font-weight: bold;
+
+    @include onMobile {
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 27px;
+
+    @include onMobile {
+      font-size: 22px;
+    }
+  }
+
+  &__css-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+}

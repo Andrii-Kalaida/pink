@@ -1,0 +1,24 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 699px) {
+    @content;
+  }
+}
+
+@mixin flex-jc-center-ai-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

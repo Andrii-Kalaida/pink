@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  @include onMobile {
+    margin-top: 120px;
+  }
+
+  &__text {
+    width: 820px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 35px;
+    color: #404040;
+  }
+
+  &__description {
+    margin-top: 18px;
+    font-size: 17px;
+    color: #636363;
+  }
+}
