@@ -30,7 +30,7 @@
     font-size: 21px;
     color: #aeaeae;
     @include onMobile {
-      margin: 0 auto 14px;
+      margin: 22px auto 14px;
     }
   }
 
@@ -81,6 +81,7 @@
   &__text {
     display: flex;
     margin-left: 50px;
+    padding: 20px;
     color: $color-light-gray;
 
     @include onTablet {

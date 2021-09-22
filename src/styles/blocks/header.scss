@@ -11,6 +11,10 @@
     justify-content: space-around;
     background: $color-white;
     opacity: 0.8;
+
+    @include onMobile {
+      height: 54px;
+    }
   }
 
   &__logo {

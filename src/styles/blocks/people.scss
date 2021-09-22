@@ -1,11 +1,11 @@
 .people {
   display: flex;
   justify-content: center;
-  margin-top: 72px;
+  margin: 72px 24px 0;
 
   @include onMobile {
     display: block;
-    margin: 52px auto 0;
+    margin: 52px auto;
   }
 
   &__text {
